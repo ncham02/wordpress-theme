@@ -1,1 +1,1 @@
-This will eventually be replaced with Ugly Theme. Yaaay.
+You've reached a page that is unreachable.

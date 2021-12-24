@@ -15,7 +15,7 @@
     </div>
     <div class="recent-posts">
 
-      <?php if ( have_posts() ) : while ( have_posts() ) : get_posts(); ?>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
         <div class="post">
                   <div class="imgcolor red"></div>
