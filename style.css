@@ -4,6 +4,7 @@ Author: Nia
 Version: 1.0
 */
 
+
 body {
   font-family: Rockwell, serif;
   padding: 0;
@@ -15,28 +16,35 @@ a {
   padding: 0 20px;
 }
 
-nav {
-padding: 25px;
-text-align: right;
-}
 
 .fill{
   padding: 0;
   height: 100%;
 }
 
-.header {
-  position: fixed;
+
+.nav-bar {
+  position:fixed;
   width: 100%;
   z-index: 9999;
+  border-bottom: 1px solid #e6e3da;
 }
 
-.header a {
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+    background-color: #FFFCF2;
+}
+
+.nav-links a {
   color: #707070;
   text-decoration: none;
 }
 
-.header a:hover{
+
+.nav-bar a:hover{
   color: black;
 }
 
@@ -44,26 +52,27 @@ text-align: right;
   display: flex;
 }
 
-.header,.main {
+.nav-links,.nav-bar,.main {
   background-color: #FFFCF2;
-}
-
-.main,.blog{
-  width: 100%;
-}
-
-.blog {
-  margin-bottom: 4rem;
 }
 
 
 .graphics {
   flex: 1;
+    margin-top:62px;
+}
+
+.graphic {
+  margin-right: 0;
+}
+
+.heading-text{
+    margin-left: 300px;
 }
 
 .main .heading-text {
   flex: 1;
-  margin-right: 50px;
+  margin-right: 100px;
   padding: 6rem 0;
   font-size: 1.5rem;
 }
@@ -104,6 +113,16 @@ text-align: right;
   z-index: 2;
 }
 
+.blog {
+  margin-bottom: 4rem;
+  width: 80%;
+  margin: auto;
+}
+
+.main,.blog{
+  width: 100%;
+}
+
 .blog .heading-text {
   text-align: center;
   margin: 5rem auto;
@@ -120,24 +139,20 @@ text-align: right;
   color: #707070;
 }
 
-.blog .recent-posts{
-  display: flex;
-}
-
 .post{
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  margin: 0 5%;
 }
 
-.text-box, .imgcolor{
-  flex-basis: 50%;
-  flex-grow: 1;
-  margin: 10px;
+.recent-posts{
+  margin: auto;
 }
 
 .imgcolor {
-  margin: 40px 10px;
+  margin: 0 10px;
+  height: 150px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .imgcolor.red{
@@ -157,7 +172,7 @@ text-align: right;
 }
 
 @media (max-width: 900px) {
-  nav {
+  .nav-links li {
     display: flex;
     justify-content: space-between;
     text-align: center;

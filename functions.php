@@ -17,4 +17,25 @@ add_action('wp_enqueue_scripts', 'load_stylesheets');
 // }
 // add_action('wp_enqueue_scripts', 'loadjs');
 
+add_theme_support('menus');
+
+add_theme_support('post-thumbnails');
+
+register_nav_menus(
+
+  array(
+
+    'top_menu' => __('Top Menu', 'ugly-theme'),
+    'footer-menu' => __('Footer Menu', 'ugly-theme')
+
+  )
+
+
+);
+
+add_image_size('smallest', 300, 300, true);
+add_image_size('largest', 800, 800, true);
+
+
+
 ?>
