@@ -1,7 +1,7 @@
 /*
 Theme Name: Ugly Theme
 Author: Nia
-Version: 1.3
+Version: 1.4
 */
 
 
@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   color: #707070;
+  max-height: 100%;
 }
 
 a {
@@ -187,7 +188,7 @@ a {
   }
 
   .nav-bar {
-   top: 46px;
+   top: 0;
   }
 
   .main {
