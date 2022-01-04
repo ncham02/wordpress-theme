@@ -180,11 +180,13 @@ a {
 }
 
 @media (max-width: 900px) {
+
   .nav-links li {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin: auto;
+    font-size: .8rem;
   }
 
   .nav-bar {
@@ -197,7 +199,7 @@ a {
 
   .main .heading-text {
     width: 80%;
-    margin: 10% auto 30%;
+    margin: 10% auto 0;
   }
 
   .blog .heading-text {
