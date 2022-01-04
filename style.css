@@ -173,6 +173,11 @@ a {
   background-color: purple;
 }
 
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
 @media (max-width: 900px) {
   .nav-links li {
     display: flex;
