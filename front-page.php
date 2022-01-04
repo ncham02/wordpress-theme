@@ -3,12 +3,12 @@
 <div class="fill">
 
     <section class="heading-text">
-      <h1>My name is Nia.</h1>
+      <h1><?php the_title();?></h1>
       <p><?php the_content();?></p>
     </section>
   </section>
 
-  <section class="blog">
+  <!-- <section class="blog">
     <div class="heading-text">
       <h1><span class="semantics"></span></h1>
       <p class="description">A blog on race, culture, and language</p>
@@ -34,7 +34,7 @@
 
 
       </div>
-  </section>
+  </section> -->
 
 </div>
 

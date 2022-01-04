@@ -1,5 +1,9 @@
 <?php get_header();?>
 
-This is the page with the blog stuff.
+<section class="heading-text">
+  <h1><?php the_title();?></h1>
+  <p><?php the_content();?></p>
+</section>
+</section>
 
 <?php get_footer();?>
